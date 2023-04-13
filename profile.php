@@ -199,7 +199,7 @@
 					<h3>Are you sure you want to delete this post?!</h3>
 					<form method="post" enctype="multipart/form-data" style="margin: auto;padding:10px;">
 						
-						<img src="<?=$row['image']?>" style="width:100%;height:200px;object-fit: cover;"><br>
+						<img src="<?=$row['image']?>" style="width:100%;height:400px;object-fit: cover;"><br>
 						<div><?=$row['post']?></div><br>
 						<input type="hidden" name="action" value="post_delete">
 
@@ -222,7 +222,7 @@
 					<h5>Edit a post</h5>
 					<form method="post" enctype="multipart/form-data" style="margin: auto;padding:10px;">
 						
-						<img src="<?=$row['image']?>" style="width:100%;height:200px;object-fit: cover;"><br>
+						<img src="<?=$row['image']?>" style="width:100%;height:400px;object-fit: cover;"><br>
 						image: <input type="file" name="image"><br>
 						<textarea name="post" rows="8"><?=$row['post']?></textarea><br>
 						<input type="hidden" name="action" value="post_edit">
@@ -334,7 +334,7 @@
 								<div style="flex:8">
 									<?php if(file_exists($row['image'])):?>
 										<div style="">
-											<img src="<?=$row['image']?>" style="width:100%;height:200px;object-fit: cover;">
+											<img src="<?=$row['image']?>" style="width:100%;height:400px;object-fit: cover;">
 										</div>
 									<?php endif;?>
 									<div>
